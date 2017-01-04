@@ -47,5 +47,5 @@ res<-ggplot(out.df,aes(x=time))+ #set plot of ode data frame output and x-variab
 	ggsave(plot=res, # call plot name
 	filename=paste0("SIRplot_","time",t,"beta",b,"gamma",g,".png"), #set the filename with parameters of time, beta and gamma
 	width=8,height=6,dpi=180) #dimensions and resolution of .png file
-	getwd()
+	getwd() #display working directory for saved .png file location
 }
